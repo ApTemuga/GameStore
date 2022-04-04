@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\AutorizImg.jpg" />
+    <None Remove="Images\RegistrationImg.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\Games\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\AutorizImg.jpg" />
+    <Resource Include="Images\RegistrationImg.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
